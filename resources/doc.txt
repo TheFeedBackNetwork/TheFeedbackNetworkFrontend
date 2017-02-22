@@ -1,0 +1,30 @@
+***Reputation***
+    //Various rep number colors
+    <li>Jon Finley <span class="rep green">+950</span></li>
+    <li>Jon Finley <span class="rep purple">+270</span></li>
+    <li>Jon Finley <span class="rep blue">+120</span></li>
+    <li>Jon Finley <span class="rep clay">+10</span></li>
+    (without color class, rep number will be gray)
+    
+***Comment score***
+    //Upvote active (green button)
+    <button class="btn-vote transparent"><img src="assets/img/upvote-active.png" alt="Upvote *active"></button>
+
+    //Upvote inactive (gray button)
+    <button class="btn-vote transparent"><img src="assets/img/upvote-inactive.png" alt="Upvote *inactive"></button>
+
+    //Downvote active (red button)
+    <button class="btn-vote transparent"><img src="assets/img/downvote-active.png" alt="Downvote *active"></button>
+
+    //Downvote inactive (gray button)
+    <button class="btn-vote transparent"><img src="assets/img/downvote-inactive.png" alt="Downvote *inactive"></button>
+
+    //Current comment score, green (when vote button is pressed, add class green)
+    <div class="current-score text-center green"><p>243</p></div>
+
+    //Current comment score, red (when vote button is pressed, add class red)
+    <div class="current-score text-center red"><p>243</p></div>
+    
+    
+***Comment***
+I'm uncertain on proper HTML5 & CSS3 structure for parent-child comments system. Unfortunately.
