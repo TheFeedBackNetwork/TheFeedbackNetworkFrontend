@@ -1,4 +1,4 @@
-#Gulp
+# Gulp
 
 I included Gulp script in this repo for ease of use. If you're not familiar with Gulp and don't know how to run it, please refer to [my guide](https://github.com/dmxt/bootstrap-scss-gulp-starter-kit/), chapter "For gulp beginners".
 
@@ -9,7 +9,7 @@ Gulp has the following tasks:
 * Notify (SASS/SCSS compile error tray notification)
 * CSS minifier (minifies main.min.css)
 
-###How to run gulp
+### How to run gulp
 
 ##### 1. CD to a directory 'gulp' containing `gulpfile.js`
 ##### 2. Install dependencies
