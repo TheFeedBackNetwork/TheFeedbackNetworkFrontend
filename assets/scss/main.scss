@@ -18,6 +18,7 @@ body {
     background: #19192d url("../img/background.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: rgba(white, .7);
 }
 
 p {
@@ -116,6 +117,10 @@ button {
 }
 
 /* Navbar */
+.navbar {
+    min-height: 75px;
+}
+
 .navbar-default {
     padding: 5px 0;
     background-color: rgba($primary, .25);
@@ -123,13 +128,16 @@ button {
     margin-bottom: 0;
     
     .navbar-brand {
-        color: rgba($primary, .75);
+        color: $primary;
         font-weight: 300;
         font-size: 24px;
         line-height: 35px;
+        transition: text-shadow .2s;
         &:hover,
         &:focus {
             color: $primary;
+            text-shadow: 0 0 5px rgba($primary, 1);
+            transition: text-shadow .2s;
         }
     }
     
@@ -400,6 +408,21 @@ button {
     }
 }
 
+form {
+    .error {
+        color: $red;
+        margin-top: -10px;
+    }
+
+    .form-group {
+        &.has-error {
+            .form-control {
+                border-color: $red;
+            }
+        }
+    }
+}
+
 /* Social */
 a {
     .fa-soundcloud {
@@ -652,6 +675,41 @@ a {
         @media only screen and (max-width: 786px) {
             border-top: 1px solid rgba(white, .1);
             padding-top: 25px;
+        }
+    }
+}
+
+/* Sign in / Register */
+
+.signin,
+.register {
+    margin-top: 50px;
+    
+    form {
+        max-width: 400px;
+        margin: auto;
+        
+        input[type="checkbox"] {
+            margin-top: 2px;
+        }
+        
+        .help-block {
+            &.forgotpass {
+                margin-top: 25px;
+            }
+            &.noacc {
+                margin-top: -7.5px;
+            }
+        }
+    }
+    
+    .alert {
+        padding: 10px;
+        
+        &.alert-danger {
+            background-color: rgba($red, .1);
+            border-color: $red;
+            color: $red;
         }
     }
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Feedback Network</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/main.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+</head>
+<body>
+   
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">The Feedback Network</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="leaderboard">
+        <div class="container">
+            <ul>
+                <li class="trophy"><img src="assets/img/i-trophy-16.png" alt="Trophy"></li>
+                <li>Jon Finley <span class="rep green">+950</span></li>
+                <li>Jon Finley <span class="rep green">+950</span></li>
+                <li>Jon Finley <span class="rep green">+950</span></li>
+                <li>Jon Finley <span class="rep purple">+270</span></li>
+                <li>Jon Finley <span class="rep blue">+120</span></li>
+                <li>Jon Finley <span class="rep clay">+10</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="signin">
+        <div class="container">
+            <form>
+                <p class="lead">Sign in</p>
+                <!-- this is an alert, add style="display:none;" to alert to remove default visibility -->
+                <div class="alert alert-danger">Your username or password is incorrect.</div>
+                
+                <div class="form-group">
+                    <label>Email address *</label>
+                    <input type="email" class="form-control" id="loginEmail" placeholder="Email address" required>
+                </div>
+                <div class="form-group">
+                    <label>Password *</label>
+                    <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Sign in</button>
+                <p class="small help-block forgotpass"><a href="#">Forgot your password?</a></p>
+                
+                <p class="small help-block noacc"><a href="register.html">Don't have an account?</a></p>
+            </form>
+        </div>
+    </div>
+   
+    <script src="assets/js/vendors/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/vendors/bootstrap.min.js"></script>
+</body>
+</html>
