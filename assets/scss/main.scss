@@ -288,7 +288,7 @@ button {
     }
     
     .btn-comment {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
     
     /* Submission score */
@@ -317,7 +317,7 @@ button {
     .profile {
         margin-left: 25px;
         color: white;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         
         .img-profile {
             margin-right: 5px;
@@ -343,12 +343,29 @@ button {
     }
     
     .content {
-        margin-bottom: 25px;
-        padding-bottom: 25px;
-        border-bottom: 1px solid rgba(white, .075);
-        &:last-child {
-            border-bottom: transparent;
+        margin-top: 50px;
+        padding-top: 50px;
+        margin-right: 50px;
+        border-top: 1px solid rgba(white, .075);
+        &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: transparent;
         }
+    }
+    
+    .content-reply {
+        margin-left: 60px;
+        padding-left: 25px;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-left: 3px solid rgba(white, .1);
+    }
+    
+    .parent-options {
+        border-top: 1px solid rgba(white, .075);
+        margin-top: 25px;
+        padding-top: 25px;
     }
     
     .btn-reply,
@@ -359,11 +376,17 @@ button {
         &:focus {
             color: rgba(white, .75);
             text-decoration: none;
+            border-color: rgba(white, .75);
         }
+    }
+    
+    .btn-reply {
+        border-bottom: 1px solid rgba(white, .25);
     }
     
     .btn-read-more {
         margin-bottom: 25px;
+        border-bottom: 1px solid rgba(white, .25);
     }
     
     .enter-comment {
