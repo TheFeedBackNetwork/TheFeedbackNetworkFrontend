@@ -21,3 +21,7 @@ npm install --save-dev
 ```
 gulp
 ```
+
+# Docs
+
+* `bootstrap-slider.js` need to be included in every html with player, for play progress module in a player.
