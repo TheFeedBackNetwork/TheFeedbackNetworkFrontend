@@ -125,14 +125,21 @@ button {
 
 .navbar-default {
     padding: 5px 0;
-    background-color: rgba($primary, .25);
+    background-color: rgba($primary, .3);
     border-bottom: none;
     margin-bottom: 0;
+
+    .brand-img {
+        display: inline;
+        margin-right: 10px;
+        margin-top: -7.5px;
+    }
     
     .navbar-brand {
         color: $primary;
         font-weight: 300;
         font-size: 24px;
+        font-family: 'Varela Round', 'Roboto', sans-serif;
         line-height: 35px;
         transition: text-shadow .2s;
         &:hover,
@@ -283,6 +290,25 @@ button {
     .album-cover {
         border-radius: 4px;
         box-shadow: 0 0 50px 0 rgba(black, .5);
+        margin-bottom: 10px;
+    }
+    
+    .title {
+        font-size: 16px;
+        color: white;
+        margin-bottom: 0;
+    }
+
+    .time {
+        color: rgba(white, .5);
+        font-size: 14px;
+        display: block;
+        margin-top: -3px;
+    }
+    
+    .artist {
+        margin-top: -15px;
+        font-size: 12px;
     }
     
     img {
@@ -394,6 +420,10 @@ button {
     .enter-comment {
         .form-control {
             margin-bottom: 15px;
+            &:focus {
+                background-color: rgba($primary, .1);
+                box-shadow: 0 0 25px rgba($primary, .5);
+            }
         }
         
         margin-bottom: 50px;
