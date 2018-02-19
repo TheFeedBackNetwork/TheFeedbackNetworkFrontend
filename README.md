@@ -20,6 +20,8 @@ npm install --save-dev
 ##### 3. Start compiling, serving, and watching files
 ```
 gulp
+or if you dont have gulp installed globally
+node_modules/gulp/bin/gulp.js
 ```
 
 # Docs
